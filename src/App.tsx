@@ -6,7 +6,7 @@ function App() {
 
   return (
     <div className="App">
-      <span>lorem</span>
+      <span className=" font-octane text-3xl">Bron howdy</span>
     </div>
   )
 }
