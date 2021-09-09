@@ -13,7 +13,7 @@ function App() {
 
   return (
     <div className="App">
-      <ModalConCern setIsSelect={setIsSelect} />
+      {!isSelect && <ModalConCern setIsSelect={setIsSelect} />}
     </div>
   )
 }
