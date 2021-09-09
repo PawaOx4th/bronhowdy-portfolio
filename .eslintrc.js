@@ -1,4 +1,4 @@
-export default {
+module.exports = {
   env: {
     browser: true,
     es2021: true,
@@ -47,6 +47,7 @@ export default {
     "react-hooks/exhaustive-deps": "warn",
     "import/prefer-default-export": "off",
     "react/prop-types": "off",
+    "no-console": ["error", { allow: ["warn", "error"] }]
   },
 
 }

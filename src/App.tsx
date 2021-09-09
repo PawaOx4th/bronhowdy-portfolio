@@ -1,19 +1,15 @@
 import React, { useState } from "react"
+import ModalConCern from "./components/ModalConcern"
+import styled from "styled-components"
 import "./App.css"
 
 function App() {
   const [count, setCount] = useState(0)
+  const [isSelect, setIsSelect] = useState(false)
 
   return (
     <div className="App">
-      <div className=" w-full min-h-screen bg-black flex justify-center items-center flex-col text-white">
-        <p className=" font-octane text-4xl sm:text-5xl">entry test</p>
-        <p className=" font-octane text-6xl sm:text-8xl">ARE YOU SLIM?</p>
-        <div>
-          <button>YES</button>
-          <button>NO</button>
-        </div>
-      </div>
+      <ModalConCern setIsSelect={setIsSelect} />
     </div>
   )
 }
