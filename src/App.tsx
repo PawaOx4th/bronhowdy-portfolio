@@ -5,10 +5,12 @@ import "./App.css"
 
 function App() {
   const [count, setCount] = useState(0)
-  const [isSelect, setIsSelect] = useState(false)
+  const [isSelect, setIsSelect] = useState<null | boolean>(null)
 
   useEffect(() => {
-    console.log("👻", isSelect)
+    if (isSelect === false) {
+      location.href = "https://www.youtube.com/watch?v=nxwY8JfpjKo"
+    }
   }, [isSelect])
 
   return (

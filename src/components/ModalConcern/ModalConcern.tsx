@@ -2,7 +2,7 @@ import React, { HTMLAttributes, ReactElement, useState } from "react"
 import styled from "styled-components"
 
 export interface IModalConcern {
-  setIsSelect: React.Dispatch<React.SetStateAction<boolean>>
+  setIsSelect: React.Dispatch<React.SetStateAction<null | boolean>>
 }
 
 function modalConcern({ setIsSelect }: IModalConcern) {
