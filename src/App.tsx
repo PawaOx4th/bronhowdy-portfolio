@@ -20,6 +20,7 @@ function App() {
       {!isSelect && <ModalConCern setIsSelect={setIsSelect} />}
       <div className="bg-black w-full min-h-screen">
         <img src={Gift} alt="" />
+        
         <ReactTypingEffect text={["Pawanachai", "Kaen"]} />
       </div>
     </div>
