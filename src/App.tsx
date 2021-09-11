@@ -18,10 +18,26 @@ function App() {
   return (
     <div className="App">
       {!isSelect && <ModalConCern setIsSelect={setIsSelect} />}
-      <div className="bg-black w-full min-h-screen">
-        <img src={Gift} alt="" />
-        
-        <ReactTypingEffect text={["Pawanachai", "Kaen"]} />
+      <div className="bg-black w-full min-h-screen text-white text-3xl font-octane">
+        {/* <img src={Gift} alt="" /> */}
+        {/* lorem123 */}
+        <ReactTypingEffect
+          text={[
+            "Hello!",
+            "Olá!",
+            "안녕하세요!",
+            "ສະບາຍດີ",
+            "Ciao!",
+            "สวัสดี",
+            "Привет",
+            "こんにちは!",
+            "Bonjour!",
+            "你好",
+          ]}
+          speed={200}
+          eraseDelay={500}
+          eraseSpeed={500}
+        />
       </div>
     </div>
   )
