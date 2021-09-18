@@ -13,6 +13,10 @@ module.exports = {
       colors: {
         "main-green": "#34C1A8",
       },
+      zIndex: {
+        "-z-1": -1,
+        "z-1": 1,
+      },
     },
   },
   variants: {

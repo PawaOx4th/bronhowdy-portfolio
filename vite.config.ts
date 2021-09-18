@@ -1,7 +1,14 @@
-import { defineConfig } from 'vite'
-import reactRefresh from '@vitejs/plugin-react-refresh'
+import { defineConfig } from "vite"
+import reactRefresh from "@vitejs/plugin-react-refresh"
+import path from "path"
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [reactRefresh()]
+  plugins: [reactRefresh()],
+  publicDir: "public",
+  resolve: {
+    alias: {
+      // "@assets": path.resolve(__dirname, "./src/assets/*"),
+    },
+  },
 })

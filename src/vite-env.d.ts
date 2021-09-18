@@ -1,10 +1,15 @@
 // / <reference types="vite/client" />
 
 declare module "*.svg" {
-  const content: any
-  export default content
+  const value: any
+  export = value
 }
 
 declare module "*.webp"
 declare module "*.jpeg"
 declare module "*.png"
+
+declare module "*.png" {
+  const value: any
+  export = value
+}

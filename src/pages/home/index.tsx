@@ -2,6 +2,7 @@ import React, { useState } from "react"
 import ReactTypingEffect from "react-typing-effect"
 import styled, { keyframes } from "styled-components"
 import ImgCicle from "../../assets/img/cicle.svg"
+import SignatureSomeThing from "../../assets/img/signature-something.svg"
 
 const Home = () => {
   const [textTyping, setTextTyping] = useState([
@@ -19,21 +20,27 @@ const Home = () => {
   return (
     <div
       className={`bg-black w-full min-h-screen text-white flex justify-end `}>
+      <ImageCircle src={ImgCicle} alt="" />
       <div
         className={` w-full lg:w-11/12 border border-yellow-300 relative flex justify-center flex-col`}>
-        <ImageCircle src={ImgCicle} alt="" />
         <ReactTypingEffect
           text={textTyping}
           className={` text-5xl text-main-green text-left`}
         />
-        <div className={` text-left text-header-content font-thin`}>
+        <div
+          className={` text-left text-header-content font-thin   relative z-z-1`}>
           I'm Bron! A Designer currently
           <br />
           standing-by in Bangkok
           <br /> Thailand.
+          <img
+            src={SignatureSomeThing}
+            alt=""
+            className={` -z-z-1 hidden lg:block absolute lg:left-2/4 lg:top-1/3`}
+          />
         </div>
         <div className={` text-left`}>
-          <p className={` text-header-subtitle font-thin`}>
+          <p className={` text-header-subtitle font-light`}>
             Freelance designer focused on Visual and Web design.
           </p>
         </div>

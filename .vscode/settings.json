@@ -15,5 +15,8 @@
         "titleBar.activeForeground": "#15202b",
         "titleBar.inactiveBackground": "#61dafb99",
         "titleBar.inactiveForeground": "#15202b99"
-    }
+    },
+    // "path-intellisense.mappings": {
+    //     "@assets" : "${workspaceFolder}/public"
+    // }
 }
