@@ -44,6 +44,7 @@ const Home = () => {
             Freelance designer focused on Visual and Web design.
           </p>
         </div>
+        <img src={SignatureSomeThing} alt="" className={` block lg:hidden`} />
       </div>
     </div>
   )
