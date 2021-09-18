@@ -5,8 +5,9 @@ import ImgCicle from "../../assets/img/cicle.svg"
 const Home = () => {
   return (
     <div
-      className={`bg-black w-full min-h-screen text-white flex justify-end `}>
-      {/* <div>1</div> */}
+      className={`bg-black w-full min-h-screen text-white flex justify-end text-white`}>
+      {/* <div>1</div> */} 
+      Lorem, ipsum dolor.2222 🦁🦁
       <div className={` w-full lg:w-11/12 border border-yellow-300 relative`}>
         <ImageCircle src={ImgCicle} alt="" />
       </div>

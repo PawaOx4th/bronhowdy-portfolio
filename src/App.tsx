@@ -36,7 +36,7 @@ function App() {
 
   return (
     <div className="App">
-      {!isSelect ? (
+      {/* {!isSelect ? (
         <ModalConCern setIsSelect={setIsSelect} />
       ) : (
         <Container
@@ -47,7 +47,8 @@ function App() {
           <Loadding className="cut-1 mt-5"></Loadding>
         </Container>
       )}
-      {isShowMainPage && <Home />}
+      {isShowMainPage && <Home />} */}
+      <Home />
     </div>
   )
 }
