@@ -1,4 +1,5 @@
 import React from "react"
+import { ReactJs , Vuedotjs } from '@icons-pack/react-simple-icons';
 import styled, { keyframes } from "styled-components"
 import ImgCicle from "../../assets/img/cicle.svg"
 
@@ -7,7 +8,9 @@ const Home = () => {
     <div
       className={`bg-black w-full min-h-screen text-white flex justify-end text-white`}>
       {/* <div>1</div> */} 
-      Lorem, ipsum dolor.2222 🦁🦁
+      <ReactJs/>
+      <Vuedotjs color="#E15718" />
+      <i className='bx bxl-docker' style={{color: "red"}}></i> 
       <div className={` w-full lg:w-11/12 border border-yellow-300 relative`}>
         <ImageCircle src={ImgCicle} alt="" />
       </div>
