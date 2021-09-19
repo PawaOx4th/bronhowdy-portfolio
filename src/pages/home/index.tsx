@@ -22,13 +22,13 @@ const Home = () => {
       className={`bg-black w-full min-h-screen text-white flex justify-end `}>
       <ImageCircle src={ImgCicle} alt="" />
       <div
-        className={` w-full lg:w-11/12 border border-yellow-300 relative flex justify-center flex-col`}>
+        className={` w-full lg:w-11/12  relative flex justify-center flex-col`}>
         <ReactTypingEffect
           text={textTyping}
           className={` text-5xl text-main-green text-left`}
         />
         <div
-          className={` text-left text-header-content font-thin   relative z-z-1`}>
+          className={` text-left text-header-content font-thin  relative z-z-1`}>
           I'm Bron! A Designer currently
           <br />
           standing-by in Bangkok
@@ -36,7 +36,7 @@ const Home = () => {
           <img
             src={SignatureSomeThing}
             alt=""
-            className={` -z-z-1 hidden lg:block absolute lg:left-2/4 lg:top-1/3`}
+            className={` -z-z-1 hidden lg:block absolute lg:left-4.5/12 lg:top-7/12`}
           />
         </div>
         <div className={` text-left`}>
