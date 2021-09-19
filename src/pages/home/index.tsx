@@ -3,6 +3,7 @@ import ReactTypingEffect from "react-typing-effect"
 import styled, { keyframes } from "styled-components"
 import ImgCicle from "../../assets/img/cicle.svg"
 import SignatureSomeThing from "../../assets/img/signature-something.svg"
+import Logo from "../../assets/img/bronhowdyLogo.svg"
 
 const Home = () => {
   const [textTyping, setTextTyping] = useState([
@@ -22,7 +23,7 @@ const Home = () => {
       className={`bg-black w-full min-h-screen text-white flex justify-end `}>
       <ImageCircle src={ImgCicle} alt="" />
       <div
-        className={` w-full lg:w-11/12  relative flex justify-center flex-col`}>
+        className={` w-full lg:w-11/12  relative flex justify-end  flex-col `}>
         <ReactTypingEffect
           text={textTyping}
           className={` text-5xl text-main-green text-left`}
@@ -45,6 +46,10 @@ const Home = () => {
           </p>
         </div>
         <img src={SignatureSomeThing} alt="" className={` block lg:hidden`} />
+        <div className={` flex items-center text-2xl font-thin gap-5 mt-48`}>
+          <img src={Logo} alt="" />
+          bronhowdy
+        </div>
       </div>
     </div>
   )
