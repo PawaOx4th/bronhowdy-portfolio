@@ -18,9 +18,7 @@
     "strictNullChecks": true,
     "noImplicitAny": true,
     "noFallthroughCasesInSwitch": true,
-    "paths": {
-      // "@assets/*" :["/src/assets/*"]
-    }
+    
   },
   "include": ["./src","src/components", "src/custom.d.ts" ]
 }

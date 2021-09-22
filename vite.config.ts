@@ -6,9 +6,4 @@ import path from "path"
 export default defineConfig({
   plugins: [reactRefresh()],
   publicDir: "public",
-  resolve: {
-    alias: {
-      // "@assets": path.resolve(__dirname, "./src/assets/*"),
-    },
-  },
 })

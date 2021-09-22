@@ -3,6 +3,9 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      height: {
+        "2cm": "0.5px",
+      },
       fontFamily: {
         octane: "'OctaneTypeface', sarif",
         Birthstone: "Birthstone, cursive",
