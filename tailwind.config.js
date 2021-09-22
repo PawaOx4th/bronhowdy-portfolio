@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       height: {
         "2cm": "0.5px",
+        469: "469px",
       },
       fontFamily: {
         octane: "'OctaneTypeface', sarif",

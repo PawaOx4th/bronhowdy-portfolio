@@ -11,7 +11,7 @@ const Home = () => {
     <div className={`bg-black w-full min-h-screen text-white `}>
       <SectionHome />
       <Divider />
-      <SectionShowWork />
+      {React.Children.toArray([...Array(5).fill(<SectionShowWork />)])}
     </div>
   )
 }
