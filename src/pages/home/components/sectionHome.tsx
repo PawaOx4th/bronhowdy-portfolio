@@ -27,9 +27,7 @@ function SectionHome() {
           loop={20}
           speed={100}
           gradient={false}
-          className={` text-xl lg:text-4xl`}
-          // className={` mt-12 bg-gradient-to-r from-main-medium-turquoise  via-main-dark-pastel-purple to-main-han-purple py-4  text-4xl`}
-        >
+          className={` text-xl lg:text-4xl`}>
           {React.Children.toArray([
             ...Array(10).fill(
               <div className={` mx-10 lg:mx-60 flex items-center`}>
@@ -43,7 +41,12 @@ function SectionHome() {
 
       <div
         className={`bg-black w-full min-h-screen text-white flex flex-col lg:flex-row lg:justify-end pl-12 pt-28`}>
-        <ImageCircle className={` hidden lg:block`} src={ImgCicle} alt="" />
+        <ImageCircle
+          className={` hidden lg:block absolute`}
+          src={ImgCicle}
+          alt=""
+          marGinRight={70}
+        />
         <div
           className={` w-full lg:w-11/12  relative flex justify-end  flex-col `}>
           <ReactTypingEffect
@@ -74,9 +77,17 @@ function SectionHome() {
             className={` block lg:hidden w-48 mt-6`}
           />
           <div
-            className={` flex items-center text-xl lg:text-2xl font-thin gap-2 lg:gap-5 mt-48`}>
-            <img className={` w-7`} src={Logo} alt="" />
-            bronhowdy
+            className={` flex justify-between items-center text-xl lg:text-2xl font-thin mt-32 lg:mt-48`}>
+            <div className={`flex gap-2 lg:gap-5`}>
+              <img className={` w-7`} src={Logo} alt="" />
+              bronhowdy
+            </div>
+            <ImageCircle
+              className={` block lg:hidden  relative w-28`}
+              src={ImgCicle}
+              alt=""
+              marGinRight={30}
+            />
           </div>
 
           <WrapperTextMarguee className={` hidden lg:block mt-14`}>
@@ -142,12 +153,11 @@ const CircleImg = keyframes`
 
 `
 
-const ImageCircle = styled.img`
+const ImageCircle = styled.img<{ marGinTop?: number; marGinRight?: number }>`
   animation: ${CircleImg} 10s linear infinite;
   overflow: hidden;
-  position: absolute;
-  top: 28px;
-  right: 64px;
+  top: ${(props) => props.marGinTop && "64px"};
+  right: ${(props) => (props.marGinRight ? `${props.marGinRight}px` : "28px")};
   z-index: 5;
 `
 
