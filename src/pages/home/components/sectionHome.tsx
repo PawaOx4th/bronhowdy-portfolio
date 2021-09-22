@@ -28,12 +28,14 @@ function SectionHome() {
           loop={20}
           speed={100}
           gradient={false}
-          className={` text-xl lg:text-4xl`}>
+          className={` text-xl lg:text-4xl font-KohSantepheap`}>
           {React.Children.toArray([
             ...Array(10).fill(
               <div className={` mx-10 lg:mx-60 flex items-center`}>
                 <img src={Turbine} alt="" className={`w-7`} />
-                <span className={` ml-6 lg:ml-14`}> new work alert</span>
+                <span className={` ml-6 lg:ml-14 font-KohSantepheap`}>
+                  new work alert
+                </span>
               </div>
             ),
           ])}
@@ -96,7 +98,7 @@ function SectionHome() {
               loop={20}
               speed={100}
               gradient={false}
-              className={`text-4xl`}
+              className={`text-4xl font-KohSantepheap`}
               // className={` mt-12 bg-gradient-to-r from-main-medium-turquoise  via-main-dark-pastel-purple to-main-han-purple py-4  text-4xl`}
             >
               {React.Children.toArray([
@@ -137,7 +139,7 @@ const GradientAnimation = keyframes`
 const WrapperTextMarguee = styled.div`
   padding: 0.5rem 0rem;
   animation: ${GradientAnimation} 10s linear infinite;
-  background-image: linear-gradient(-45deg, #49d7bb, #19a590, #9d75ce, #5037ff);
+  background-image: linear-gradient(-35deg, #49d7bb, #19a590, #9d75ce, #5037ff);
   background-size: 600% 600%;
 `
 

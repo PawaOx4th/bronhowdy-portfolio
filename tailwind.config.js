@@ -5,6 +5,8 @@ module.exports = {
     extend: {
       fontFamily: {
         octane: "'OctaneTypeface', sarif",
+        Birthstone: "Birthstone, cursive",
+        KohSantepheap: "Koh Santepheap, cursive",
       },
       fontSize: {
         "header-content": "72px",
