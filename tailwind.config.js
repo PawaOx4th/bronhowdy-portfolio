@@ -12,6 +12,12 @@ module.exports = {
       },
       colors: {
         "main-green": "#34C1A8",
+        main: {
+          "medium-turquoise": "#49D7BB",
+          "jungle-green": "#19A590",
+          "dark-pastel-purple": "#9D75CE",
+          "han-purple": "#5037FF",
+        },
       },
       zIndex: {
         "-z-1": -1,
