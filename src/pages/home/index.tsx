@@ -57,6 +57,7 @@ const Home = () => {
             loop={20}
             speed={100}
             gradient={false}
+            className={`text-4xl`}
             // className={` mt-12 bg-gradient-to-r from-main-medium-turquoise  via-main-dark-pastel-purple to-main-han-purple py-4  text-4xl`}
           >
             {React.Children.toArray([
@@ -95,6 +96,7 @@ const GradientAnimation = keyframes`
 
 const WrapperTextMarguee = styled.div`
   margin-top: 56px;
+  padding: 0.5rem 0rem;
   animation: ${GradientAnimation} 10s linear infinite;
   background-image: linear-gradient(-45deg, #49d7bb, #19a590, #9d75ce, #5037ff);
   background-size: 600% 600%;
