@@ -1,11 +1,12 @@
 import React, { useState } from "react"
-import ImgCicle from "../../../assets/img/cicle.svg"
-import SignatureSomeThing from "../../../assets/img/signature-something.svg"
-import Logo from "../../../assets/img/bronhowdyLogo.svg"
-import Turbine from "../../../assets/img/turbine.svg"
 import Marquee from "react-fast-marquee"
 import ReactTypingEffect from "react-typing-effect"
 import styled, { keyframes } from "styled-components"
+import Logo from "../../../assets/img/bronhowdyLogo.svg"
+import ImgCicle from "../../../assets/img/cicle.svg"
+import SignatureSomeThing from "../../../assets/img/signature-something.svg"
+import Turbine from "../../../assets/img/turbine.svg"
+import LineWhite from "../../../assets/img/line-white.svg"
 
 function SectionHome() {
   const [textTyping, setTextTyping] = useState([
@@ -83,7 +84,7 @@ function SectionHome() {
               bronhowdy
             </div>
             <ImageCircle
-              className={` block lg:hidden  relative w-28`}
+              className={` block lg:hidden  relative w-28 md:w-36`}
               src={ImgCicle}
               alt=""
               marGinRight={30}
