@@ -57,7 +57,7 @@ function SectionHome() {
             className={` text-6xl lg:text-5xl text-main-green text-left`}
           />
           <div
-            className={` text-left text-4xl lg:text-7xl font-light lg:font-thin pt-8 lg:pt-12 relative z-z-1`}>
+            className={` text-left text-4xl lg:text-5xl xl:text-7xl font-light lg:font-thin pt-8 lg:pt-12 lg:w-10/12 xl:w-full relative z-z-1`}>
             <span>I'm Bron! A Designer currently</span>
             <br />
             <span> standing-by in Bangkok</span>
@@ -65,7 +65,7 @@ function SectionHome() {
             <img
               src={SignatureSomeThing}
               alt=""
-              className={` -z-z-1 hidden lg:block absolute lg:left-4.5/12 lg:top-7/12`}
+              className={` -z-z-1 hidden lg:block absolute lg:left-3/4 lg:top-2/3 xl:left-4.5/12 xl:top-7/12`}
             />
           </div>
           <div className={` text-left pt-6 lg:pt-14`}>

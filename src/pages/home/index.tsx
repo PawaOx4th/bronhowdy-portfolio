@@ -21,7 +21,7 @@ const Home = () => {
           </>
         ),
       ])}
-
+      <div className={`h-28`}></div>
       <MessageFooter />
       <Footer />
     </div>

@@ -13,7 +13,7 @@ function WrapperText() {
 
 function MessageFooter() {
   return (
-    <div className={`border py-5 lg:py-7`}>
+    <div className={`border border-r-0 border-l-0 py-5 lg:py-7`}>
       <Marquee gradient={false}>
         <WrapperText />
         <WrapperText />
