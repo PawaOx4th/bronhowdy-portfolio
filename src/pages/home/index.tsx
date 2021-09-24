@@ -6,6 +6,7 @@ import SectionHome from "./components/sectionHome"
 import SectionShowWork from "./components/sectionShowWork"
 import Divider from "../../components/Divider"
 import MessageFooter from "../../components/Marquee"
+import Footer from "../../components/Footer"
 
 const Home = () => {
   return (
@@ -22,6 +23,7 @@ const Home = () => {
       ])}
 
       <MessageFooter />
+      <Footer />
     </div>
   )
 }
