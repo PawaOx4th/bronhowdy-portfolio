@@ -5,13 +5,23 @@ import styled, { keyframes } from "styled-components"
 import SectionHome from "./components/sectionHome"
 import SectionShowWork from "./components/sectionShowWork"
 import Divider from "../../components/Divider"
+import MessageFooter from "../../components/Marquee"
 
 const Home = () => {
   return (
     <div className={`bg-black w-full min-h-screen text-white `}>
       <SectionHome />
-      <Divider />
-      {React.Children.toArray([...Array(5).fill(<SectionShowWork />)])}
+
+      {React.Children.toArray([
+        ...Array(5).fill(
+          <>
+            <Divider />
+            <SectionShowWork />
+          </>
+        ),
+      ])}
+
+      <MessageFooter />
     </div>
   )
 }
