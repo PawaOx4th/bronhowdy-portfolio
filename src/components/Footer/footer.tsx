@@ -11,7 +11,7 @@ interface Props {}
 
 function Footer(): ReactElement {
   return (
-    <div className={` pt-11 pb-7 px-9`}>
+    <footer className={` pt-11 pb-7 px-9`}>
       <div className={`flex flex-col items-center`}>
         <p className={` uppercase text-2xl font-light`}>
           Keereetharn@gmail.com
@@ -38,11 +38,19 @@ function Footer(): ReactElement {
           </a>
         </div>
       </div>
-      <div className={` mt-14 flex flex-col items-center justify-center`}>
+      <div
+        className={` mt-14 flex flex-col lg:flex-row items-center lg:items-center justify-center lg:justify-between lg:px-14 lg:pb-20`}>
         <img src={BronHowdyLogo} alt="" className={`w-16 h-auto`} />
-        <p className={`pt-7 text-sm`}>&#169; 2021 / Bronhowdy.co</p>
+        <p className={`pt-7 lg:pt-0 text-sm`}>&#169; 2021 / Bronhowdy.co</p>
+        <button
+          className={`text-xl hidden lg:block`}
+          onClick={(e) => {
+            window.scrollTo({ top: 0, behavior: "smooth" })
+          }}>
+          BACK TO TOP
+        </button>
       </div>
-    </div>
+    </footer>
   )
 }
 
