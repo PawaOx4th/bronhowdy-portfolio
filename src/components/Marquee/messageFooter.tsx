@@ -4,7 +4,7 @@ import styled from "styled-components"
 
 function WrapperText() {
   return (
-    <div className={`flex items-center ml-11 text-2xl font-light`}>
+    <div className={`flex items-center ml-11 text-lg lg:text-2xl font-light`}>
       <Dot />
       GET IN TOUCH AND MAKE GREAT PROJECTS TOGETHER
     </div>
@@ -13,7 +13,7 @@ function WrapperText() {
 
 function MessageFooter() {
   return (
-    <div className={`border py-7`}>
+    <div className={`border py-5 lg:py-7`}>
       <Marquee gradient={false}>
         <WrapperText />
         <WrapperText />
