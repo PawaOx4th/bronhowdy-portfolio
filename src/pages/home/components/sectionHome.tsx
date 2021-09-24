@@ -22,7 +22,7 @@ function SectionHome() {
     "你好",
   ])
   return (
-    <div>
+    <div className={`min-h-screen`}>
       <WrapperTextMarguee className={` block lg:hidden`}>
         <Marquee
           loop={20}
@@ -41,9 +41,9 @@ function SectionHome() {
           ])}
         </Marquee>
       </WrapperTextMarguee>
-
+      {/* md:min-h-screen */}
       <div
-        className={`bg-black w-full  md:min-h-screen text-white flex flex-col lg:flex-row lg:justify-end pl-12 pt-28`}>
+        className={`bg-black w-full   text-white flex flex-col lg:flex-row lg:justify-end xl:pl-12 pt-28`}>
         <ImageCircle
           className={` hidden lg:block absolute`}
           src={ImgCicle}

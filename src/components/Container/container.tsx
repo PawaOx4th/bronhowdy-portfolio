@@ -5,7 +5,11 @@ interface IContainer {
 }
 
 function Container({ children }: IContainer) {
-  return <div className={`px-8 lg:px-28 py-9 lg:py-28`}>{children}</div>
+  return (
+    <div className={`px-8 sm:px-24 xl:px-28 py-9 sm:py-10 xl:py-28`}>
+      {children}
+    </div>
+  )
 }
 
 export default Container
