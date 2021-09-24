@@ -5,6 +5,7 @@ import {
   Instagram,
   Linkedin,
 } from "@icons-pack/react-simple-icons"
+import BronHowdyLogo from "../../assets/img/bronhowdyLogo.svg"
 
 interface Props {}
 
@@ -36,6 +37,10 @@ function Footer(): ReactElement {
             <Linkedin />
           </a>
         </div>
+      </div>
+      <div className={` mt-14 flex flex-col items-center justify-center`}>
+        <img src={BronHowdyLogo} alt="" className={`w-16 h-auto`} />
+        <p className={`pt-7 text-sm`}>&#169; 2021 / Bronhowdy.co</p>
       </div>
     </div>
   )
