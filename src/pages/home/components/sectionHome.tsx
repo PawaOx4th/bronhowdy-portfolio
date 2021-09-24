@@ -43,7 +43,7 @@ function SectionHome() {
       </WrapperTextMarguee>
       {/* md:min-h-screen */}
       <div
-        className={`bg-black w-full   text-white flex flex-col lg:flex-row lg:justify-end px-6 xl:pl-12 pt-28`}>
+        className={`bg-black w-full   text-white flex flex-col lg:flex-row lg:justify-end px-6 sm:px-0 xl:pl-12 pt-28`}>
         <ImageCircle
           className={` hidden lg:block absolute`}
           src={ImgCicle}
