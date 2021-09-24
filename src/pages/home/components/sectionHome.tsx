@@ -26,7 +26,6 @@ function SectionHome() {
       <WrapperTextMarguee className={` block lg:hidden`}>
         <Marquee
           loop={20}
-          speed={100}
           gradient={false}
           className={` text-xl lg:text-4xl font-KohSantepheap`}>
           {React.Children.toArray([
